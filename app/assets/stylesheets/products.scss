@@ -1,6 +1,17 @@
 main section.products-index,
 main section.categories-show {
 
+  aside.sold.out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 20px;
+    background: indianred;
+    color: white;
+    padding: 8px 8px;
+    font-size: 0.8em;
+  }
+
   .products {
     display:         flex;
     flex-direction:  row;
@@ -72,5 +83,3 @@ main section.products-show {
     }
   }
 }
-
-
