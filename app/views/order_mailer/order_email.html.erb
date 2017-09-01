@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Your order #<%= @order.id %> has been processed</h1>
+    <% @order.line_items.each do |line_item| %>
+    <p>
+      <%= line_item.product.name %>
+    </p>
+    <% end %>
+    <p><%= @order.total_cents %></p>
+    <p>
+      Your order has been successfully processed!<br>
+    </p>
+    <p>Thanks for ordering from us, and have a great day!</p>
+  </body>
+</html>
