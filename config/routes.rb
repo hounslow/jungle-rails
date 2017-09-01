@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   resources :products do
     resources :reviews, only: [:create]
   end
+  resources :reviews, only: [:destroy]
   resources :products, only: [:index, :show]
-  
+
   resources :categories, only: [:show]
 
   resource :cart, only: [:show] do

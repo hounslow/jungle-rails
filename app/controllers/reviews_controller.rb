@@ -1,4 +1,12 @@
 class ReviewsController < ApplicationController
+  before_action :require_user
+
+  def require_user
+    if !current_user
+      flash[:error] = "You must be logged in to access this section"
+      redirect_to new_session_url # halts request cycle
+    end
+  end
 
   def create
     @review = Review.new(review_params)
@@ -12,6 +20,11 @@ class ReviewsController < ApplicationController
     end
   end
 
+  def destroy
+    Review.find(params[:id]).destroy
+    redirect_to :back
+  end
+
   private
   def review_params
     params.require(:review).permit(
@@ -19,4 +32,6 @@ class ReviewsController < ApplicationController
     :rating
     )
   end
+
+
 end
