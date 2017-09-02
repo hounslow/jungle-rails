@@ -28,5 +28,5 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Screenshots
 
-[Image of the products, some of which are soldout](https://github.com/hounslow/jungle-rails/blob/master/images/Screen%20Shot%202017-09-02%20at%2012.23.50%20PM.png)
-[Image of the cart in Jungle](https://github.com/hounslow/jungle-rails/blob/master/images/Screen%20Shot%202017-09-02%20at%2012.24.00%20PM.png)
+![Image of the products, some of which are soldout](https://github.com/hounslow/jungle-rails/blob/master/images/Screen%20Shot%202017-09-02%20at%2012.23.50%20PM.png)
+![Image of the cart in Jungle](https://github.com/hounslow/jungle-rails/blob/master/images/Screen%20Shot%202017-09-02%20at%2012.24.00%20PM.png)
