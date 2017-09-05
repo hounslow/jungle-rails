@@ -26,16 +26,16 @@ end
 User.create!({
   first_name: "Matthew",
   last_name: "Hounslow",
-  email: "hi@gmail.com",
-  password: "Hello",
-  password_confirmation: "Hello"
+  email: "matt@gmail.com",
+  password: "Hellohi",
+  password_confirmation: "Hellohi"
   })
 User.create!({
   first_name: "Hi",
   last_name: "Hi",
-  email: "hi@gmail.com",
-  password: "Hello",
-  password_confirmation: "Hello"
+  email: "hello@gmail.com",
+  password: "Hellohi",
+  password_confirmation: "Hellohi"
   })
 
 ## CATEGORIES
