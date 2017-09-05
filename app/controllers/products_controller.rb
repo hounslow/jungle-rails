@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
 
   def index
-    @products = Product.all.order(created_at: :desc)
+    @products = Product.order(created_at: :desc).all
   end
 
   def show
